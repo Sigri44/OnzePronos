@@ -1,0 +1,77 @@
+<html lang="fr">
+	<head>
+		<title>Calculatrice - Onze Pronos</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="img/favicon.png" type="image/png" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/calculatrice.css">
+	</head>
+	<body class="container">
+		<div id="intro">
+            <h1 class="text-center">Bienvenue sur le site Onze Pronos !</h1>
+        </div>
+        <div id="banniere" class="text-center">
+            <a href="https://www.facebook.com/Onzepronos/" target="_blank">
+                <img id="banner" class="img-responsive" src="img/banniere.jpg" />
+            </a>
+            <p>Cliquez sur l'image pour accéder à notre page facebook</p>
+        </div>
+        
+        <div class="row margin-top">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h1>Calculatrice</h1>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+                <table class="calculatrice" id="calc">
+                    <tr>
+                        <td colspan="4" class="calc_td_resultat"><input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="javascript:key_detect_calc('calc',event);" /></td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="CE" onclick="javascript:f_calc('calc','ce');" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="&larr;" onclick="javascript:f_calc('calc','nbs');" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="%" onclick="javascript:f_calc('calc','%');" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="+" onclick="javascript:f_calc('calc','+');" /></td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="7" onclick="javascript:add_calc('calc',7);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="8" onclick="javascript:add_calc('calc',8);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="9" onclick="javascript:add_calc('calc',9);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="-" onclick="javascript:f_calc('calc','-');" /></td>
+                    </tr>
+                        <tr>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="4" onclick="javascript:add_calc('calc',4);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="5" onclick="javascript:add_calc('calc',5);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="6" onclick="javascript:add_calc('calc',6);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="x" onclick="javascript:f_calc('calc','*');" /></td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="1" onclick="javascript:add_calc('calc',1);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="2" onclick="javascript:add_calc('calc',2);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="3" onclick="javascript:add_calc('calc',3);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="&divide;" onclick="javascript:f_calc('calc','');" /></td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="0" onclick="javascript:add_calc('calc',0);" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="," onclick="javascript:add_calc('calc','.');" /></td>
+                        <td class="calc_td_btn"><input type="button" class="calc_btn" value="=" onclick="javascript:f_calc('calc','=');" /></td>
+                    </tr>
+                </table>
+        <script type="text/javascript">
+                document.getElementById('calc').onload=initialiser_calc('calc');
+        </script>
+            </div>
+        </div>
+        <footer>
+            <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+                <div class="row" id="bottomNav">
+                    <div class="col-xs-4 text-center"><a href="index.html"><i class="glyphicon glyphicon-home"></i><br>Accueil</a></div>
+                    <div class="col-xs-4 text-center"><a href="#"><i class="glyphicon glyphicon-signal"></i><br>Bankroll</a></div>
+                    <div class="col-xs-4 text-center"><a href="calcul.html"><i class="glyphicon glyphicon-transfer"></i><br>Calcul</a></div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./js/calculatrice.js"></script>
+	</body>
+</html>

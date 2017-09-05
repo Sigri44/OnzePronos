@@ -3,10 +3,7 @@ html {
     color:#FFF;
     margin:0;
     padding:0;
-    background: url(../img/background.jpg) no-repeat center fixed; 
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
-    overflow-y: scroll;
+    background-color: black;
     height: 100%;
 }
 body {
@@ -38,14 +35,12 @@ footer > .container {
     color:#fff;
 }
 
-a, h1, h2, h4, .text {
+a, h1, h2, h4, p, .text {
     color:#FFF;
 }
 
 img#banner {margin-bottom: 5px;}
-.img-responsive {
-    margin: 0 auto;
-}
+.img-responsive {margin: 0 auto;}
 .margin-top {margin-top: 20px;}
 .pronos {
     padding-bottom: 10px;
@@ -53,7 +48,7 @@ img#banner {margin-bottom: 5px;}
     background-color: black;
 }
 .pronos, img#banner {
-    border: 3px black groove;
+    border: 3px white groove;
     border-radius: 10px;
     box-shadow: 3px 3px 10px black;
 }
